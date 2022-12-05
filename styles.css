@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(fonts/Comfortaa-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(fonts/Comfortaa-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #aec09a;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #778d45;
+    border: solid 1px #1a2902;
+}
+
+.logo {
+    border: solid 1px #1a2902;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo_img {
+    height: 60px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+}
+
+.logo_text {
+    font-family: "Comfortaa", normal;
+    font-size: 60px;
+    margin: 0;
+}
+
+.logo_a {
+    text-decoration: none;
+    color: black;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+.nav_div {
+    border: solid 1px #1a2902;
+}
+
+.nav_a {
+    text-decoration: none;
+    color: black;
+    flex-grow: 1;
+    transition: all 1s ease;
+}
+
+.nav_a:hover {
+    transition: all 1s ease;
+    background-color: #446216;
+}
+
+.nav_text {
+    text-align: center;
+    font-size: x-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #aec670;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.information img {
+    max-width: 316px;
+    max-height: 214px;
+    margin-left: 10%;
+}
+
+.text_information {
+    width: 40%;
+    margin-right: 10%;
+}
+
+.text_information .bold {
+    font-size: large;
+}
+
+.button {
+    display: flex;
+    justify-content: end;
+}
+
+button p{
+margin-top: 5px;
+margin-bottom: 5px;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #778d45;
+    border: #1a2902 solid 2px;
+}
+
+footer div {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.ftr_a {
+    text-decoration: none;
+    color: rgb(71, 70, 70);
+    transition: all 0.2s ease;
+}
+
+.ftr_a:hover {
+    transition: all 0.2s ease;
+    color: black;
+}
+
+p {
+    font-family: "Comfortaa", normal;
+}
+
+.help {
+    height: 130.8px;
+}
+
+.fill {
+    width: 100%;
+    height: 100px;
+    background-image: url(photos/7787189.jpg);
+    background-repeat: repeat;
+    background-size: 500px;
+}
+
+@media screen and (max-width:1000px) {
+    nav{
+        flex-direction: column;
+    }
+
+    .information {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .information img {
+        margin-left: 0;
+        width: 70%;
+    }
+
+    .text_information {
+        margin-right: 0;
+        width: 70%;
+    }
+
+    .help {
+        height: 234px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .logo_img {
+        height: 30px;
+    }
+
+    .logo_text {
+        font-size: 30px;
+    }
+}
